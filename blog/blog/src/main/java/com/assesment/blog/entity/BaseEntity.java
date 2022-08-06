@@ -31,5 +31,7 @@ public class BaseEntity implements Serializable {
 
     private Long updateBy;
 
+    private Date updatedDate;
+
 
 }

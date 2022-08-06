@@ -15,7 +15,7 @@ import javax.persistence.Table;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class BlogCommentEntity extends BaseEntity{
+public class BlogCommentEntity extends BaseEntity {
 
     private String email;
 

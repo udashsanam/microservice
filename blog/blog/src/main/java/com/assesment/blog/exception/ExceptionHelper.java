@@ -11,6 +11,15 @@ public class ExceptionHelper {
 
     @ExceptionHandler(value = NotFoundException.class)
     public ResponseEntity<ResponseDto> NotFoundException(NotFoundException exception) {
-        return new ResponseEntity<>(new ResponseDto("Not found exception"), HttpStatus.NOT_FOUND);
+        return new ResponseEntity<>(new ResponseDto(exception.getMessage()), HttpStatus.NOT_FOUND);
+    }
+    @ExceptionHandler(value = NotSavedException.class)
+    public ResponseEntity<ResponseDto> NotSavedException(NotSavedException ex){
+
+        return new ResponseEntity<>(new ResponseDto(ex.getMessage()), HttpStatus.BAD_REQUEST);
+    }
+    @ExceptionHandler(value = CannotDeleteException.class)
+    public ResponseEntity<ResponseDto> CannotDeleteException(CannotDeleteException ex){
+        return new ResponseEntity<>(new ResponseDto(ex.getMessage()), HttpStatus.NOT_ACCEPTABLE);
     }
 }
