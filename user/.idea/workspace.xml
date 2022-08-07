@@ -5,43 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c4867ed9-30b6-4fe5-b061-631ac302b067" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../authentication/.idea/libraries/Maven__io_jsonwebtoken_jjwt_0_9_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../authentication/.idea/libraries/Maven__org_projectlombok_lombok_1_18_24.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../authentication/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_2_4_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../authentication/.idea/libraries/Maven__org_springframework_security_spring_security_config_5_7_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../authentication/.idea/libraries/Maven__org_springframework_security_spring_security_core_5_7_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../authentication/.idea/libraries/Maven__org_springframework_security_spring_security_crypto_5_7_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../authentication/.idea/libraries/Maven__org_springframework_security_spring_security_web_5_7_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../authentication/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../authentication/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../authentication/authentication/src/main/java/com/assessment/authentication/config/RestTemplateConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../authentication/authentication/src/main/java/com/assessment/authentication/config/SecurityConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../authentication/authentication/src/main/java/com/assessment/authentication/controller/AuthenticationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../authentication/authentication/src/main/java/com/assessment/authentication/exception/CannotDeleteException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../authentication/authentication/src/main/java/com/assessment/authentication/exception/ErrorWhileParsingException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../authentication/authentication/src/main/java/com/assessment/authentication/exception/ExceptionHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../authentication/authentication/src/main/java/com/assessment/authentication/exception/NotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../authentication/authentication/src/main/java/com/assessment/authentication/exception/NotSavedException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../authentication/authentication/src/main/java/com/assessment/authentication/model/AuthenticationRequestDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../authentication/authentication/src/main/java/com/assessment/authentication/model/BaseEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../authentication/authentication/src/main/java/com/assessment/authentication/model/BlogUserDetail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../authentication/authentication/src/main/java/com/assessment/authentication/model/ResponseDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../authentication/authentication/src/main/java/com/assessment/authentication/model/RoleEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../authentication/authentication/src/main/java/com/assessment/authentication/model/UserDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../authentication/authentication/src/main/java/com/assessment/authentication/model/UserEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../authentication/authentication/src/main/java/com/assessment/authentication/security/JwtToken.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../authentication/authentication/src/main/java/com/assessment/authentication/service/BlogUserDetailServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../authentication/authentication/src/main/java/com/assessment/authentication/util/BlogUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../authentication/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../authentication/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../authentication/authentication/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../authentication/authentication/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../authentication/authentication/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../authentication/authentication/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../discovery-server/discovery-server/src/main/java/com/assessment/discoveryserver/DiscoveryServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../discovery-server/discovery-server/src/main/java/com/assessment/discoveryserver/DiscoveryServerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../discovery-server/discovery-server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../discovery-server/discovery-server/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/user/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/assessment/user/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/assessment/user/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/assessment/user/entity/UserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/assessment/user/entity/UserEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/assessment/user/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/assessment/user/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/assessment/user/service/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/assessment/user/service/IUserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/assessment/user/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/assessment/user/service/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/assessment/user/UserApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/assessment/user/UserApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,29 +60,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/sanam/Desktop/tree leaf interview/user&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;ee11cbb19052e40b07aac0ca060c23ee&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/sanam/Desktop/tree leaf interview/discovery-server",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "spring.configuration.checksum": "ee11cbb19052e40b07aac0ca060c23ee"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\sanam\Downloads\user\user\src\main\java\com\assessment\user" />
@@ -146,7 +115,8 @@
       <workItem from="1659796729133" duration="3129000" />
       <workItem from="1659799965153" duration="2365000" />
       <workItem from="1659838644093" duration="3872000" />
-      <workItem from="1659856964556" duration="3380000" />
+      <workItem from="1659856964556" duration="3384000" />
+      <workItem from="1659863641967" duration="1151000" />
     </task>
     <servers />
   </component>
