@@ -88,7 +88,7 @@ public class AuthenticationController {
         try {
 //            object= restTemplate.exchange("http://localhost:8082/api/user/account/findByUsername/"+ authenticationRequestDto.getUsername(), HttpMethod.GET,null, Object.class);
 
-            responseDtoResponseEntity =  restTemplate.exchange("http://localhost:8082/api/user/account/findByUsername/"+ authenticationRequestDto.getUsername(), HttpMethod.GET,null, ResponseDto.class);
+            responseDtoResponseEntity =  restTemplate.exchange("http://user-service/api/user/account/findByUsername/"+ authenticationRequestDto.getUsername(), HttpMethod.GET,null, ResponseDto.class);
         } catch (HttpStatusCodeException exception){
             return new ResponseEntity<>(new ResponseDto("User not found "), HttpStatus.NO_CONTENT);
         }
@@ -98,7 +98,7 @@ public class AuthenticationController {
         try {
             ResponseDto responseDto = BlogUtil.getResponseDto(responseDtoResponseEntity.getBody());
             userDto = objectMapper.readValue(objectMapper.writeValueAsString(responseDto.getObject()), userDto.getClass());
-            responseDtoResponseEntity = restTemplate.exchange("http://localhost:8082/api/user/account/findUserEntityFromId/"+userDto.getUserId(), HttpMethod.GET,null, ResponseDto.class);
+            responseDtoResponseEntity = restTemplate.exchange("http://user-service/api/user/account/findUserEntityFromId/"+userDto.getUserId(), HttpMethod.GET,null, ResponseDto.class);
             responseDto = BlogUtil.getResponseDto(responseDtoResponseEntity.getBody());
             UserEntity userEntity= objectMapper.readValue(objectMapper.writeValueAsString(responseDto.getObject()), UserEntity.class);
 

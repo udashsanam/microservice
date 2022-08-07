@@ -43,7 +43,7 @@ public class BlogUserDetailServiceImpl implements UserDetailsService {
         UserDto userDto = new UserDto();
         ObjectMapper objectMapper = new ObjectMapper();
         try {
-            object= restTemplate.exchange("http://localhost:8082/api/user/account/findByUsername/"+ username, HttpMethod.GET,null, ResponseDto.class);
+            object= restTemplate.exchange("http://user-service/api/user/account/findByUsername/"+ username, HttpMethod.GET,null, ResponseDto.class);
             ResponseDto responseDto = BlogUtil.getResponseDto(object.getBody());
             userDto = objectMapper.readValue(objectMapper.writeValueAsString(responseDto.getObject()), userDto.getClass());
 
@@ -58,10 +58,10 @@ public class BlogUserDetailServiceImpl implements UserDetailsService {
 
         List<String> authorities = new ArrayList<>();
         try {
-            object = restTemplate.exchange("http://localhost:8082/api/user/account/findAllAuthoritiesById/" + userDto.getUserId(), HttpMethod.GET, null, ResponseDto.class);
+            object = restTemplate.exchange("http://user-service/api/user/account/findAllAuthoritiesById/" + userDto.getUserId(), HttpMethod.GET, null, ResponseDto.class);
             ResponseDto responseDto = BlogUtil.getResponseDto(object.getBody());
           authorities = objectMapper.readValue(objectMapper.writeValueAsString(responseDto.getObject()), authorities.getClass());
-            object = restTemplate.exchange("http://localhost:8082/api/user/account/findUserEntityFromId/"+userDto.getUserId(), HttpMethod.GET,null, ResponseDto.class);
+            object = restTemplate.exchange("http://user-service/api/user/account/findUserEntityFromId/"+userDto.getUserId(), HttpMethod.GET,null, ResponseDto.class);
             responseDto = BlogUtil.getResponseDto(object.getBody());
             userEntity= objectMapper.readValue(objectMapper.writeValueAsString(responseDto.getObject()), UserEntity.class);
         } catch (JsonProcessingException e) {
