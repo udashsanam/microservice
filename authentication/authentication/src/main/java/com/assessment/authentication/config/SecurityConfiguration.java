@@ -1,5 +1,6 @@
 package com.assessment.authentication.config;
 
+import com.assessment.authentication.security.JwtRequestFilter;
 import com.assessment.authentication.service.BlogUserDetailServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -20,11 +21,14 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 public class SecurityConfiguration extends WebSecurityConfigurerAdapter{
 
     private BlogUserDetailServiceImpl blogUserDetailService;
+    private JwtRequestFilter jwtRequestFilter;
 
     @Autowired
-    public SecurityConfiguration(BlogUserDetailServiceImpl blogUserDetailService) {
+    public SecurityConfiguration(BlogUserDetailServiceImpl blogUserDetailService,
+                                 JwtRequestFilter jwtRequestFilter) {
 
         this.blogUserDetailService = blogUserDetailService;
+        this.jwtRequestFilter = jwtRequestFilter;
     }
 
     @Override
@@ -44,7 +48,11 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter{
         http.csrf().disable()
                 .authorizeRequests()
                 .antMatchers("/authentication/**").permitAll()
-                .anyRequest().authenticated();
+                .anyRequest().authenticated()
+                        .and().sessionManagement()
+                .sessionCreationPolicy(SessionCreationPolicy.STATELESS);
+
+        http.addFilterBefore(jwtRequestFilter, UsernamePasswordAuthenticationFilter.class);
 
     }
 

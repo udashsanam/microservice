@@ -5,15 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c4867ed9-30b6-4fe5-b061-631ac302b067" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../authentication/authentication/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../authentication/authentication/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../authentication/authentication/src/main/java/com/assessment/authentication/AuthenticationApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../authentication/authentication/src/main/java/com/assessment/authentication/AuthenticationApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../authentication/authentication/src/main/java/com/assessment/authentication/config/RestTemplateConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../authentication/authentication/src/main/java/com/assessment/authentication/config/RestTemplateConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../authentication/authentication/src/main/java/com/assessment/authentication/controller/AuthenticationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../authentication/authentication/src/main/java/com/assessment/authentication/controller/AuthenticationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../authentication/authentication/src/main/java/com/assessment/authentication/service/BlogUserDetailServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../authentication/authentication/src/main/java/com/assessment/authentication/service/BlogUserDetailServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../authentication/authentication/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../authentication/authentication/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog/blog/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../blog/blog/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog/blog/src/main/java/com/assesment/blog/BlogApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../blog/blog/src/main/java/com/assesment/blog/BlogApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog/blog/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../blog/blog/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../authentication/authentication/src/main/java/com/assessment/authentication/controller/TestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../authentication/authentication/src/main/java/com/assessment/authentication/security/JwtRequestFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../authentication/authentication/src/main/java/com/assessment/authentication/config/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/../authentication/authentication/src/main/java/com/assessment/authentication/config/SecurityConfiguration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -121,7 +115,7 @@
       <workItem from="1659799965153" duration="2365000" />
       <workItem from="1659838644093" duration="3872000" />
       <workItem from="1659856964556" duration="3384000" />
-      <workItem from="1659863641967" duration="2300000" />
+      <workItem from="1659863641967" duration="2569000" />
     </task>
     <servers />
   </component>
