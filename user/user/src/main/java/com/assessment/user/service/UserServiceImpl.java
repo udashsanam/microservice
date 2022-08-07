@@ -93,4 +93,11 @@ public class UserServiceImpl extends BaseServiceImpl<UserEntity, Long> implement
 
         return authorities;
     }
+
+    @Override
+    public UserDto findByUsername(String username) {
+        UserEntity userEntity = userRepository.findByUsername(username);
+        if(userEntity == null) return null;
+        return new UserDto(userEntity.getUsername(), userEntity.getEmail(), userEntity.getId(), userEntity.getRoleEntity().getName());
+    }
 }

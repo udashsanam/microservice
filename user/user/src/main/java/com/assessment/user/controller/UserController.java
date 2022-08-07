@@ -69,4 +69,24 @@ public class UserController {
         }
         return new ResponseEntity<>(new ResponseDto("Successfully fetched", userEntity), HttpStatus.OK);
     }
+
+    @GetMapping("/findByUsername/{username}")
+    public ResponseEntity<ResponseDto>  getUserByIf(@PathVariable("username") String username){
+        UserDto userDto = userService.findByUsername(username);
+        if(userDto == null){
+            return new ResponseEntity<>(new ResponseDto("Not found"), HttpStatus.NOT_FOUND);
+        }
+
+        return new ResponseEntity<>(new ResponseDto("Successfully fetched ", userDto), HttpStatus.OK);
+    }
+
+    @GetMapping("/findUserEntityFromId/{id}")
+    public ResponseEntity<ResponseDto> getUserEntityId(@PathVariable("id") Long id){
+        UserEntity userEntity = userService.findById(id);
+        if(userEntity == null) {
+            return new ResponseEntity<>(new ResponseDto("User not found"), HttpStatus.NO_CONTENT);
+        }
+
+        return new ResponseEntity<>(new ResponseDto("Successfully fetched ", userEntity), HttpStatus.OK);
+    }
 }

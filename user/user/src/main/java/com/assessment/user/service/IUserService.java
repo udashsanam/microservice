@@ -15,4 +15,6 @@ public interface IUserService extends IBaseService<UserEntity, Long> {
     UserDto findByUserId(Long id);
 
     List<String> findAllAuthoritiesByUserId(Long id);
+
+    UserDto findByUsername(String username);
 }
